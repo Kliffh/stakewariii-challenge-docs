@@ -53,7 +53,7 @@
     && echo "Supported" \
     || echo "Not supported"
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9615.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/2.png)
 
     sudo apt install -y git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ docker.io protobuf-compiler libssl-dev pkg-config
     clang llvm cargo
@@ -65,7 +65,7 @@
     sudo apt install clang build-essential make
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9616.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/3.png)
 
 按 1 并按 Enter
 
@@ -104,7 +104,7 @@
 
 编写shell启动脚本：
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9617.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/4.png)
 
 脚本和可执行文件拷贝至~/near/bin/,运行节点：
 
@@ -112,18 +112,16 @@
 
 查看日志：
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9618.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/5.png)
 
 ### 激活节点
 
     export NEAR_ENV=shardnet
     near login
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9877.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/6.png)
 
     near generate-key sender-stakewar.factory.shardnet.near
-
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps9878.tmp.jpg)
 
     cp ~/.near-credentials/shardnet/sender-stakewar.shardnet.near.json ~/.near/validator_key.json
     cd ~/.near/
@@ -147,7 +145,7 @@ validator_key.json中：
     export NEAR_ENV=shardnet
     near call factory.shardnet.near create_staking_pool '{"staking_pool_id":"sender-stakewar", "owner_id": "sender-stakewar.shardnet.near", "stake_public_key":"  ed25519:J1BPXgmUXdCyB68nZhzZriLczz5Vf67en28uHwxMTWp9", "reward_fee_fraction":{"numerator": 5, "denominator": 100},"code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="sender-stakewar.shardnet.near" --amount=30 --gas=300000000000000
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps112A.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/8.png)
 
 ### NEAR 充值和质押
 
@@ -163,7 +161,7 @@ validator_key.json中：
 
     near call sender-stakewar.factory.shardnet.near ping '{}' --accountId sender-stakewar.shardnet.near --gas=300000000000000
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps112B.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/9.png)
 
 ## 检查节点
 ### 查看⽇志
@@ -175,16 +173,16 @@ validator_key.json中：
     sudo apt install curl jq
     curl -s http://127.0.0.1:3030/status | jq .version
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF9B1.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/a.png)
 
 ### 检查委托⼈和质押命令
 
     near view sender-stakewar.factory.shardnet.near get_accounts '{"from_index": 0,"limit": 10}' --accountId sender-stakewar.shardnet.near
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF9B2.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/b.png)
 
 ### ⽹络监控
 
 [http://34.145.111.248:3030/status](http://34.145.111.248:3030/status)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsF9C3.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/c.png)
