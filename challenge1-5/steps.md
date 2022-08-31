@@ -10,7 +10,7 @@
 打开 https ://wallet.shardnet.near.org
 
 根据页面提示创建钱包：
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wpsA1A.tmp.jpg)
+![](https://github.com/Kliffh/stakewariii-challenge-docs/blob/main/challenge1-5/images/1.png)
 
 设置near-cli，根据步骤安装。
 
